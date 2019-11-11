@@ -1,0 +1,10 @@
+//Ændringer til bootstrap´s default
+$theme-colors:(
+    "dark": #A4ffA1,
+    );
+    
+$border-radius:2.25rem;
+
+
+//link til all bootstap filer - skal nederst
+@import "../node_modules/bootstrap/scss/bootstrap";

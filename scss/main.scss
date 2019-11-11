@@ -1,0 +1,130 @@
+//seperate filer
+@import "./bootstrapcustom";
+@import "./variables";
+@import "./mixins";
+
+//fonts
+@import url("https://fonts.googleapis.com/css?family=Chilanka|Raleway:300&display=swap");
+
+//default regler
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  color: $col-defaultColor;
+  text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+  font-family: "Chilanka", cursive;
+  font-family: "Raleway", sans-serif;
+  background-color: $col-body;
+}
+
+//header
+header {
+  height: 95vh;
+
+  ul {
+    display: flex;
+  }
+  a {
+    color: $col-aLinks;
+    white-space: nowrap; //oneline only
+
+    &:hover {
+      color: $col-aLinksHover;
+      text-decoration: none;
+    }
+  }
+  h2 {
+    //   margin-top: 20vh;
+    font-size: 3vw;
+  }
+  #logo{
+    position: absolute;
+    width: 2em;
+    top: 20px;
+    left: 20px;
+  }
+
+  button.btn.btn-dark.mx-5 {
+    min-width: 10vw;
+  }
+  .headerBgr img {
+    width: 100%;
+    position: absolute;
+    height: 95vh;
+    top: 0;
+    z-index: -1;
+  }
+}
+//header slut
+
+
+//main
+main {
+  .greybox {
+    background-color: $col-greybox;
+    z-index: 1;
+    &:nth-last-child(2) {
+      min-height: 550px;
+    }
+
+    p {
+      line-height: 2em;
+    }
+  }
+  .col-md-4.offset-md-2.greybox.p-3.mt-2.findGrenå {
+    border-right: 8px solid $col-body;
+  }
+
+  .mapsBgr img {
+    max-width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .visVejBtn {
+    z-index: 2;
+    margin-top: 25%;
+  }
+
+  main a {
+    width: 100%;
+  }
+}
+//main slut
+
+
+//footer
+footer {
+  background-color: $col-footerBgr;
+
+  i {
+    font-size: 2em;
+  }
+  .fa-facebook {
+    &:hover {
+      color: $col-fbIcon;
+    }
+  }
+  .fa-instagram {
+    &:hover {
+      @include bgrGradient();
+    }
+  }
+}
+//footer slut
+
+
+//Responsive
+@media only screen and (max-width: 753) {
+  footer {
+    background-color: lightblue;
+  }
+}
+//Responsive slut

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Header ................................................................................................... -->
+      <div class="container-fluid p-0">
+        <header>
+          <nav>
+            <div>
+              <img id="logo" src="./assets/images/sunset.png" alt="" />
+            </div>
+            <ul class="justify-content-end p-4">
+              <li><a href="#grenåStrand">Grenå strand</a></li>
+              <li class="mx-5"><a href="#findVej">Find vej</a></li>
+              <li class="mr-5"><a href="#footer">Kontakt</a></li>
+            </ul>
+          </nav>
+          <div class="row">
+            <h2 class="col-md-12 text-center align-center mt-5 p-0">
+              Danmarks næstbedste strand!
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-2 offset-md-4 headerBtns text-center mt-5">
+              <form method="get" action="#findVej">
+                <button class="btn btn-dark mx-5" type="submit">Kort</button>
+              </form>
+            </div>
+
+            <div class="col-md-2 headerBtns text-center mt-5">
+              <form method="get" action="#oplevelser">
+                <button class="btn btn-dark mx-5" type="submit">
+                  Oplevelser
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="headerBgr">
+            <img src="./assets/images/headerImg.jpg" alt="" />
+          </div>
+        </header>
+      </div>
+      <!-- Header ................................................................................................... -->
+
+      <!-- main ................................................................................................... -->
+      <main>
+        <div class="container-fluid mt-5">
+          <div id="grenåStrand" class="row">
+            <div class="col-md-8 offset-md-2 p-0">
+              <h2>Grenå strand</h2>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-8 offset-md-2 p-1">
+              <p>Danmarks næstbedste strand!</p>
+              <p>
+                Stranden ligger syd for Grenaa Havn og er egentlig to strande,
+                adskilt af Polderrevet, som er et meget velbesøgt fiskested med
+                hornfisk og ørreder.
+              </p>
+              <p>
+                Stranden nærmest havnen ligger med sommerhuse i klitten og er
+                meget børnevenlig med lav vanddybde og det fineste sand.
+                Sommeren igennem kan man bruge beachvolleybanen eller deltage i
+                mange aktiviteter.
+              </p>
+              <p>
+                Stranden har udsigtsplads, som er velegnet for folk med
+                handicap, og hvor familien kan hygge sig med madkurven. I
+                sommerferien er der redningstårn med kystlivreddere på stranden.
+              </p>
+              <p>
+                Længere mod syd, med flot udsigt mod Havknuden, ligger så
+                stranden, der er udpeget til Danmarks næstbedste.
+              </p>
+              <p>
+                Går man et par kilometer, har man en rigtig flot strand helt for
+                sig selv. Sådan en strandvandring er et besøg værd hele året.
+              </p>
+            </div>
+          </div>
+          <div class="row ">
+            <div id="oplevelser" class="col-md-8 offset-md-2 greybox p-3 mt-4">
+              <h2 class="text-center p-3 pb-5 pt-5">Oplevelser i Grenå</h2>
+              <p class="px-5 mx-5">
+                Prøv Danmarks største rutschebaner og over 60 forlystelser for
+                både små og store legebørn i Djurs Sommerland - der også er
+                Nordens største Sommerland. Kom vildt tæt på dyrenes spændende
+                verden i fx Randers Regnskov, Skandinavisk Dyrepark, Ree Park
+                Safari eller Kattegatcentret. Et besøg på Det Grønne Museum og
+                Gammel Estrup, giver et lærerigt indblik i "de gamle dage". De
+                ligger næsten som perler på en snor.
+              </p>
+              <p class="px-5 pb-5 mx-5">
+                Du kan også shoppe i vildt charmerende Ebeltoft, opleve den
+                storslåede natur i Nationalpark Mols Bjerge og slutte dagen af
+                på en af de mange strande på den 250 km lange kyststrækning.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              id="findVej"
+              class="col-md-4 offset-md-2 greybox p-3 mt-2 findGrenå"
+            >
+              <h2 class="text-center p-3">Find Grenå strand her</h2>
+              <div class="mapsBgr position-relative">
+                <img
+                  src="./assets/images/maps.JPG
+                        "
+                  alt=""
+                />
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <form
+                    method="get"
+                    action="https://www.google.dk/maps/dir//Gren%C3%A5+Strand,+8500+Gren%C3%A5/@56.3930719,10.9116128,13.75z/data=!4m9!4m8!1m0!1m5!1m1!1s0x464dd42d1e1e45e5:0xb8395bedf690197!2m2!1d10.9151227!2d56.3984665!3e0"
+                  >
+                    <button class="visVejBtn btn btn-dark mx-5" type="submit">
+                      Vis vej
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 greybox p-3 mt-2">
+              <h2 class="text-center p-3">Fiskeri</h2>
+              <p class="p-3">
+                Grenaa Havn ligger på spidsen af Djursland. Der kan fiskes i
+                havnebassinerne og fra molen ved til venstre for
+                Kattegatcentret. Fra molen fanges der en del isinger og
+                skrubber. Mange er undermålere, men der er også fisk over målet
+                imellem de mange fladfisk. Ud over fladfisk kan der også fanges
+                sej, torsk, sild, fjæsing og ulke. I 2013 blev Grenaa Havn kendt
+                for regnbueørreder. Et stort udslip af regnbueørreder gjorde
+                havnebassinerne til en overfyldt put and take. Det lokkede mange
+                lystfiskere til området, og der blev fanget ufattelige mængder
+                regnbueørreder. Ørrederne er vist for længst trukket væk fra
+                området.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- main ................................................................................................... -->
+
+      <!-- footer ................................................................................................... -->
+      <footer id="footer">
+        <div class="container-fluid footerContent ">
+          <div class="row p-5 mt-5">
+            <div class="col-md-2 offset-md-3 ">
+              <p>Kontakt</p>
+              <p>Adresse</p>
+              <p>Grenå sydstrand</p>
+              <p>8500 Grenå</p>
+            </div>
+            <div class="col-md-2 mx-5">
+              <p>Kontakt</p>
+              <p>Adresse</p>
+              <p>Grenå sydstrand</p>
+              <p>8500 Grenå</p>
+            </div>
+            <div class="col-md-2">
+              <p>Kontakt</p>
+              <p>Adresse</p>
+              <p>Grenå sydstrand</p>
+              <p>8500 Grenå</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center mb-4">
+              <h5>Følg os her</h5>
+            </div>
+            <div class="col-md-12 text-center mb-4">
+              <a href="https://www.facebook.com/visitdjursland" target="_blank"
+                ><i class="fab fa-facebook mx-2"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/visitdjursland/"
+                target="_blank"
+                ><i class="fab fa-instagram mx-2"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer ................................................................................................... -->
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>
